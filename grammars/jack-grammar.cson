@@ -34,7 +34,15 @@
     'name': 'variable.language.jack'
   }
   {
-    'match': '\\b(class|function|method|constructor|var|let|do|else|if|return|while)\\b'
+    'match': '(\\+|\\-|\\*|\\/|\\>|\\<|\\=|\\~)'
+    'name': 'variable.operator.jack'
+  }
+  {
+    'match': '\\b(class|function|method|constructor|field|var|let|do|else|if|return|while)\\b'
+    'name': 'keyword.control.jack'
+  }
+  {
+    'match': '\\b(class|function|method|constructor|field|var)\\b'
     'name': 'keyword.control.jack'
   }
   {
@@ -42,7 +50,7 @@
     'name': 'entity.name.type.jack'
   }
   {
-    'match': '\\bvar\\b[ ]*\\b(Array|String)\\b'
+    'match': '\\bvar\\b[ ]*\\b(Array|String|List)\\b'
     'name': 'support.type.jack'
   }
   {
@@ -51,10 +59,10 @@
   }
   {
     'match': '\\".*?\\"'
-    'name': 'string.jack'
+    'name': 'string.quoted.jack'
   }
   {
-    'match': '\\b([a-zA-Z_]\\w*)\\b[ ]*\\(.*?\\)'
+    'match': '\\b([a-zA-Z_]\\w*)\\b[ ]*\\('
     'captures':
       '1':
         'name': 'entity.name.function.jack'
