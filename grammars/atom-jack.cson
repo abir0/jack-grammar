@@ -1,0 +1,57 @@
+# If this is your first time writing a language grammar, check out:
+#   - https://flight-manual.atom.io/hacking-atom/sections/creating-a-grammar/
+
+'scopeName': 'source.jack'
+'name': 'Jack'
+'fileTypes': [
+  'jack'
+]
+'patterns': [
+  {
+    'match': '//.*$'
+    'name': 'comment.line.jack'
+  }
+  {
+    'begin': '/\\*'
+    'end': '\\*/'
+    'name': 'comment.block.jack'
+  }
+  {
+    'begin': '/\\*\\*'
+    'end': '\\*/'
+    'name': 'comment.block.documentation.jack'
+  }
+  {
+    'match': '\\b(null|true|false)\\b'
+    'name': 'constant.language.jack'
+  }
+  {
+    'match': '\\b(this)\\b'
+    'name': 'variable.language.jack'
+  }
+  {
+    'match': '\\b(class|function|method|constructor|var|let|do|else|if|return|while)\\b'
+    'name': 'keyword.control.jack'
+  }
+  {
+    'match': '\\b(void|boolean|int|char)\\b'
+    'name': 'entity.name.type.jack'
+  }
+  {
+    'match': '\\bvar\\b[ ]*\\b(Array|String)\\b'
+    'name': 'support.type.jack'
+  }
+  {
+    'match': '\\b(Array|Keyboard|Math|Memory|Output|Screen|String|Sys)\\b'
+    'name': 'support.class.jack'
+  }
+  {
+    'match': '\\".*?\\"'
+    'name': 'string.quoted.double.jack'
+  }
+  {
+    'match': '\\b([a-zA-Z_]\\w*)\\b[ ]*\\(.*?\\)'
+    'name': 'entity.name.function.jack'
+  }
+
+]
