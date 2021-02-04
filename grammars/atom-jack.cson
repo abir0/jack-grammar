@@ -22,6 +22,10 @@
     'name': 'comment.block.documentation.jack'
   }
   {
+    'match': '\\b[0-9]+\\b'
+    'name': 'constant.numeric.jack'
+  }
+  {
     'match': '\\b(null|true|false)\\b'
     'name': 'constant.language.jack'
   }
