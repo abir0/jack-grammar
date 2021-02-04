@@ -6,10 +6,7 @@
     "language",
     "grammar"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/abir0/jack-grammar"
-  },
+  "repository": "https://github.com/abir0/jack-grammar",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
