@@ -51,11 +51,13 @@
   }
   {
     'match': '\\".*?\\"'
-    'name': 'string.quoted.double.jack'
+    'name': 'string.jack'
   }
   {
     'match': '\\b([a-zA-Z_]\\w*)\\b[ ]*\\(.*?\\)'
-    'name': 'entity.name.function.jack'
+    'captures':
+      '1':
+        'name': 'entity.name.function.jack'
   }
 
 ]
