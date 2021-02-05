@@ -4,7 +4,11 @@
   "description": "Jack language grammar for Atom text editor.",
   "keywords": [
     "language",
-    "grammar"
+    "grammar",
+    "syntax",
+    "highlighting",
+    "jack",
+    "nand2tetris"
   ],
   "repository": "https://github.com/abir0/jack-grammar.git",
   "license": "MIT",
