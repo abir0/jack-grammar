@@ -35,47 +35,48 @@
     'name': 'constant.language.jack'
   }
   {
-    'comment': 'pointer variable'
-    'match': '\\b(this)\\b'
-    'name': 'variable.language.jack'
-  }
-  {
-    'comment': 'symbolic operator'
-    'match': '(\\+|\\-|\\*|\\/|\\>|\\<|\\~|\\&|\\|)'
-    'name': 'variable.operator.jack'
-  }
-  {
-    'comment': 'language keyword'
-    'match': '\\b(class|function|method|constructor|var|static|field|let|do|else|if|return|while)\\b'
-    'name': 'keyword.jack'
-  }
-  {
-    'comment': 'primitive variable type'
-    'match': '\\b(void|boolean|int|char)\\b'
-    'name': 'storage.type.jack'
-  }
-  {
-    'comment': 'added variable types'
-    'match': '\\bvar\\b[ ]*\\b([a-zA-Z]*)\\b'
-    'captures':
-      '1':
-        'name': 'support.type.jack'
-  }
-  {
-    'comment': 'added classe'
-    'match': '\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b\\.'
-    'captures':
-      '1':
-        'name': 'support.class.jack'
-  }
-  {
     'comment': 'string constant'
     'match': '\\".*?\\"'
     'name': 'string.quoted.jack'
   }
   {
+    'comment': 'pointer variable'
+    'match': '\\b(this)\\b'
+    'captures':
+      '1':
+        'name': 'variable.language.jack'
+  }
+  {
+    'comment': 'symbolic operator'
+    'match': '(\\+|\\-|\\*|\\/|\\>|\\<|\\~|\\&|\\|)'
+    'captures':
+      '1':
+        'name': 'variable.operator.jack'
+  }
+  {
+    'comment': 'language keyword'
+    'match': '\\b(class|function|method|constructor|var|static|field|let|do|else|if|return|while)\\b'
+    'captures':
+      '1':
+        'name': 'keyword.jack'
+  }
+  {
+    'comment': 'variable type'
+    'match': '\\b(void|boolean|int|char)\\b'
+    'captures':
+      '1':
+        'name': 'support.type.jack'
+  }
+  {
+    'comment': 'class identifier'
+    'match': '\\b([A-Z][a-zA-Z]*)\\b \\{'
+    'captures':
+      '1':
+        'name': 'support.class.jack'
+  }
+  {
     'comment': 'function identifier'
-    'match': '\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b[ ]*\\('
+    'match': '\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b *\\('
     'captures':
       '1':
         'name': 'entity.name.function.jack'
