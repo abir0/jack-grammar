@@ -1,7 +1,7 @@
 {
   "name": "jack-grammar",
   "version": "0.1.0",
-  "author": "Abir Hasan"
+  "author": "Abir Hasan",
   "description": "Jack language grammar for Atom text editor.",
   "keywords": [
     "language",
